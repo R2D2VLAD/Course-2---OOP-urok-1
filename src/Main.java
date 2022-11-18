@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        //Домашняя работа
-        System.out.println("Домашняя работа");
+        //Домашняя работа 1,2
+        System.out.println("Домашняя работа 1,2");
         //Задание 1 и 2
         System.out.println("Задание 1 и 2");
         //Создайте новый проект в IDEA. Создайте класс «Человек», у которого есть:
@@ -23,19 +23,19 @@ public class Main {
         //"Привет! Меня зовут… Я из города… Я родился в… году. Я работаю на должности… . Будем знакомы!"
 
 
-        Human one = new Human("Максим", "Минск", 1988, "бренд-менеджер");
-        System.out.println(one);
+        Human Максим = new Human("Максим", "Минск", 1988, "бренд-менеджер");
+        System.out.println(Максим);
 
-        Human two = new Human("Аня", "Москва", 1993,
+        Human Аня = new Human("Аня", "Москва", 1993,
                 "методистобразовательных программ");
-        System.out.println(two);
+        System.out.println(Аня);
 
-        Human free = new Human("Катя", "Калининград", 1992, "продакт-менеджером");
-        System.out.println(free);
+        Human Катя = new Human("Катя", "Калининград", 1992, "продакт-менеджером");
+        System.out.println(Катя);
 
-        Human forr = new Human("Артём", "Москва", 1995,
+        Human Артём = new Human("Артём", "Москва", 1995,
                 "директор по развитию бизнеса");
-        System.out.println(forr);
+        System.out.println(Артём);
         System.out.println();
 
         //задание 3
@@ -80,5 +80,7 @@ public class Main {
         Car auto5 = new Car("Hyundai", "Avante", 2016,
                 "Южной Корее", "цвет кузова - оранжевый", 1.6);
         System.out.println(auto5);
+
+
     }
 }

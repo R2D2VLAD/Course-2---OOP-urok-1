@@ -7,12 +7,36 @@ public class Car {
     public double engineVolume;
 
     public Car(String brand, String model, int year, String country, String color, double engineVolume) {
-        this.brand = brand;
-        this.model = model;
-        this.year = year;
-        this.country = country;
-        this.color = color;
-        this.engineVolume = engineVolume;
+        if (brand == null) {
+            this.brand = "Default";
+        } else {
+            this.brand = brand;
+        }
+        if (model == null) {
+            this.model = "Default";
+        } else {
+            this.model = model;
+        }
+        if (year == 0) {
+            this.year = 2000;
+        } else {
+            this.year = year;
+        }
+        if (country == null) {
+            this.country = "Default";
+        } else {
+            this.country = country;
+        }
+        if (color == null) {
+            this.color= "белый";
+        } else {
+            this.color = color;
+        }
+        if (Double.compare(engineVolume, 0) == 0) {
+            this.engineVolume = 1.5;
+        } else {
+            this.engineVolume = engineVolume;
+        }
     }
 
     public String getBrand() {
